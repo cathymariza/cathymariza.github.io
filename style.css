@@ -20,14 +20,14 @@ header h1 {
   text-align: center; */
 }
 
-/* jumbotron {
+jumbotron {
   display: flex;
   align-items: center;
   background-image: url('https://unsplash.com/photos/Y20JJ_ddy9M');
   background-size: cover;
   color: #ffffff;
   height: 600px;
-} */
+}
 jumbotron h2 {
   font-size: 70px;
   font-weight: 600;
