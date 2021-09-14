@@ -23,7 +23,7 @@ header h1 {
 jumbotron {
   display: flex;
   align-items: center;
-/*   background-image: url('https://musicadvisor.com/wp-content/uploads/2018/10/music-note-names-1020x510.jpeg'); */
+  background-image: url('https://images.unsplash.com/photo-1571974599782-87624638275e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80');
   background-size: cover;
   color: #ffffff;
   height: 600px;
@@ -64,3 +64,4 @@ col-sm-8{
   color: #ffffff
   margin: 0 0 30px;
 }
+/* https://images.unsplash.com/photo-1571974599782-87624638275e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80 */
