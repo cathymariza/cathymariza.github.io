@@ -1,15 +1,13 @@
 $(document).ready(function() {
   jQuery.ajaxPrefilter(function(options) {
-    if (options.crossDomain && jQuery.support.cors) {
-        options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
-    }
+
 });
 
-const getJoke = () =>{
+const getCat = () =>{
   $.ajax({
     dataType: "json",
     method: 'GET',
-    url: "https://official-joke-api.appspot.com/random_joke",
+    url: "https://thecatapi.com/",
     success: function(results) {
       $('#setup').text(results["setup"]);
       $('#punchline').text(results["punchline"]);
@@ -20,16 +18,14 @@ const getJoke = () =>{
   });
 }
 
-const getPicture = () =>{
+const getFact = () =>{
   $.ajax({
     dataType: "json",
     method: 'GET',
     Header: {"X-Requested-With":"XMLHttpRequest"},
-    url: "http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true",
+    url: "https://thecatapi.com/",
     success: function(results) {
             $('#size_controller').attr("src",results[0]);
-
-      $('#picture').css("background-image", "url("+results[0]+")");
 
     },
     error: function(xhr,status,error) {
@@ -37,18 +33,18 @@ const getPicture = () =>{
     }
   });
 }
-  getJoke();
-  getPicture();
-$('#gen_joke').click(function () {
-  getJoke();
+  getCat();
+  getFact();
+$('#gen_cat').click(function () {
+  getCat();
 });
 
-$('#gen_image').click(function () {
-  getPicture();
+$('#gen_fact').click(function () {
+  getFact();
 });
 
 $('#generate').click(function () {
-  getJoke();
-  getPicture();
+  getCat();
+  getFat();
 });
 });
